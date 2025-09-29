@@ -1,0 +1,16 @@
+.cursosDescription {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cursosDescriptionContainer {
+    width: 100%;
+    max-width: 90rem; /* 1440px / 16px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem; /* 24px / 16px */
+    box-sizing: border-box;
+}

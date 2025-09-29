@@ -1,0 +1,143 @@
+.inscricao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; /* 50px / 16px */
+    background-color: #074c6d;
+}
+
+.inscricaoContainer {
+    width: 100%;
+    max-width: 90rem; /* 1440px / 16px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem; /* 24px / 16px */
+    margin-bottom: 3rem; /* 50px / 16px */
+    box-sizing: border-box;
+    color: white;
+}
+
+.inscricaoContainer h1 {
+    font-size: 2.5rem; /* 40px / 16px */
+    margin-bottom: 2rem;
+}
+
+.infosInscricao {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infosInscricao div {
+    width: 40%;
+}
+
+.textInscricao h4 {
+    text-align: center;
+    font-size: 1.5rem; /* 24px / 16px */
+    margin: 1.5rem 0;
+}
+
+.textInscricao p {
+    text-align: center;
+    font-size: 1.25rem; /* 20px / 16px */
+    margin: 1.5rem 0;
+}
+
+.textInscricao div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 10px / 16px */
+}
+
+.textInscricao div i {
+    width: 2.5rem; /* 40px / 16px */
+    text-align: center;
+    font-size: 1.75rem; /* 28px / 16px */
+}
+
+.qrcodeInscricao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1rem; /* 16px / 16px */
+}
+
+.qrcodeInscricao h3 {
+    font-size: 2rem; /* 32px / 16px */
+    color: #074c6d;
+    margin: 1.5rem 0;
+}
+
+.qrcodeInscricao a {
+    font-size: 1.25rem; /* 20px / 16px */
+    font-weight: 300;
+    color: black;
+    margin: 1.5rem 0;
+    text-decoration: none;
+}
+
+.qrcodeInscricao img {
+    transform: scale(1.6);
+    width: 70%;
+}
+
+/* Usamos 'em' em media queries por ser uma boa prática para acessibilidade */
+@media (max-width: 30em) { /* 480px / 16px */
+    .inscricao {
+        margin-top: 1.25rem; /* 20px / 16px */
+    }
+
+    .inscricaoContainer h1 {
+        font-size: 1.5rem; /* 24px / 16px */
+        margin-bottom: 1.25rem; /* 20px / 16px */
+    }
+
+    .infosInscricao {
+        flex-direction: column-reverse;
+    }
+
+    .infosInscricao div {
+        width: 80%;
+    }
+
+    .textInscricao h4 {
+        font-size: 1.25rem; /* 20px / 16px */
+    }
+
+    .textInscricao p {
+        font-size: 1rem; /* 16px / 16px */
+    }
+
+    .textInscricao div {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .textInscricao div i {
+        width: 2rem; /* 30px / 16px */
+        font-size: 1.5rem; /* 24px / 16px */
+        margin-left: 1rem; /* 16px / 16px */
+    }
+
+    .qrcodeInscricao h3 {
+        font-size: 1.25rem; /* 20px / 16px */
+    }
+
+    .qrcodeInscricao h5 {
+        font-size: 0.75rem; /* 10px / 16px */
+    }
+
+    .qrcodeInscricao img {
+        transform: scale(1.6);
+        width: 100%;
+    }
+}

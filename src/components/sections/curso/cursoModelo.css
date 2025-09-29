@@ -1,0 +1,180 @@
+.secaoCurso {
+    width: 100%;
+    padding: 3rem 0; /* 50px / 16px */
+    border-bottom: 0.01rem solid black; /* 1px / 16px */
+}
+
+.infosCurso {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.infosCurso img {
+    position: absolute;
+    width: 30%;
+    transform: scale(1.6);
+    margin-left: 45%;
+}
+
+.textsCurso {
+    width: 45%;
+    height: 15rem; /* 250px / 16px */
+}
+
+.textsCurso h1 {
+    margin: 0;
+    font-size: 3rem; /* 50px / 16px */
+}
+
+.textsCurso h5 {
+    margin: 0;
+    font-size: 2rem; /* 30px / 16px */
+    font-weight: 300;
+}
+
+.textsCurso p {
+    font-size: 1.25rem; /* 20px / 16px */
+}
+
+.cardsCurso {
+    width: 100%;
+    margin-bottom: 3rem; /* 50px / 16px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cardsCurso .card {
+    width: 30%;
+    height: 18rem; /* 300px / 16px */
+    background-color: transparent;
+    border: 0.01rem solid black; /* 1px / 16px */
+    border-radius: 1.25rem; /* 20px / 16px */
+    padding: 2rem; /* 30px / 16px */
+}
+
+.infosCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 16px / 16px */
+}
+
+.cardsCurso i {
+    font-size: 1.8rem; /* 30px / 16px */
+}
+
+.infosCard h4 {
+    line-height: 2;
+    margin: 0;
+    font-size: 1.2rem; /* 24px / 16px */
+    font-weight: 300;
+}
+
+.card ul {
+    font-size: 1rem; /* 16px / 16px */
+}
+
+.card ul li {
+    margin-bottom: 3%;
+}
+
+.lista-conteudos li::marker {
+    font-size: 1.5rem; /* 24px / 16px */
+    color: #074c6d;
+}
+
+.lista-trabalhos li::marker {
+    font-size: 1.5rem; /* 24px / 16px */
+    color: #307d3b;
+}
+
+.cardExtra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconCamera {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.galery {
+    width: 100%;
+    height: 70%;
+}
+
+.icons-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icons-extra div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem; /* 16px / 16px */
+}
+
+.icons-extra div h5 {
+    margin: 0;
+}
+
+.icons-extra i {
+    color: #c91b1d;
+}
+
+@media (max-width: 30em) { /* 480px / 16px */
+    .infosCurso img {
+        display: none;
+    }
+
+    .textsCurso {
+        width: 100%;
+        height: 10rem; /* 170px / 16px */
+    }
+
+    .textsCurso h1 {
+        font-size: 2rem; /* 32px / 16px */
+    }
+
+    .textsCurso h5 {
+        font-size: 1.25rem; /* 20px / 16px */
+    }
+
+    .textsCurso p {
+        font-size: 1rem; /* 16px / 16px */
+    }
+
+    .cardsCurso {
+        margin-bottom: 1.25rem; /* 20px / 16px */
+        flex-direction: column;
+        gap: 1rem; /* 15px / 16px */
+    }
+
+    .cardsCurso .card {
+        width: 80%;
+        height: 16rem; /* 250px / 16px */
+    }
+
+    .cardsCurso i {
+        font-size: 1.25rem; /* 20px / 16px */
+    }
+
+    .infosCard h4 {
+        font-size: 1.125rem; /* 18px / 16px */
+    }
+
+    .card ul {
+        font-size: 1rem; /* 14px / 16px */
+    }
+}

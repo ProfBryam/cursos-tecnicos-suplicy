@@ -1,0 +1,173 @@
+.banner {
+    width: 100%;
+    height: 85vh; /* Altura relativa à tela, aprox. 750px em telas Full HD */
+    display: flex;
+    justify-content: center;
+    background-image: url('./../../../assets/img/banner.png');
+    background-position: 45% 50%;
+    background-size: 155%;
+}
+
+.gradiant {
+    position: absolute;
+    width: 100%;
+    height: 15rem; /* 250px / 16px */
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 1) 100%);
+}
+
+.bannerContainer {
+    width: 100%;
+    max-width: 90rem; /* 1440px / 16px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem; /* 24px / 16px */
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.topBannerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoTec {
+    width: 35%;
+    height: 9rem; /* 150px / 16px */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoTec div {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.textLogoTec {
+    width: 60%;
+    background-image: url('./../../../assets/img/logoTecTexto.png');
+}
+
+.iconLogoTec {
+    width: 40%;
+    background-image: url('./../../../assets/img/logoTecIcones.png');
+}
+
+.topBannerText h1,
+.topBannerText h5 {
+    margin: 0;
+}
+
+.topBannerText h1 {
+    font-size: 2.5rem; /* 40px / 16px */
+}
+
+.topBannerText h5 {
+    width: 70%;
+    font-size: 1.2rem; /* 20px / 16px */
+    font-weight: 400;
+}
+
+.bottonBannerContainer {
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.cardsInscricao {
+    width: 18%;
+}
+
+.cardsInscricao div {
+    width: 100%;
+    padding: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem; /* 8px / 16px */
+    background-color: #074c6d;
+}
+
+.cardsInscricao div p {
+    margin: 0;
+    font-size: 1rem; /* 18px / 16px */
+    font-weight: 300;
+}
+
+.cardsInscricao div i {
+    font-size: 1.5rem; /* 26px / 16px */
+}
+
+.btnInscricao {
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    padding: 1.5%;
+    font-size: 1.5rem; /* 24px / 16px */
+    color: white;
+    font-weight: 700;
+    background-color: #16a148;
+    border: none;
+    border-radius: 0.5rem; /* 8px / 16px */
+    margin-left: 25%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnInscricao:hover{
+    background-color: #0e5a2a;
+}
+
+@media (max-width: 30em) { /* 480px / 16px */
+    .banner {
+        height: 60vh; /* Altura menor para telas de celular */
+        background-repeat: no-repeat;
+        background-size: 175%;
+    }
+
+    .logoTec {
+        height: 6.25rem; /* 100px / 16px */
+        flex-direction: column-reverse;
+    }
+
+    .iconLogoTec,
+    .textLogoTec {
+        width: 100%;
+    }
+
+    .topBannerText h1 {
+        font-size: 1.5rem; /* 25px / 16px */
+    }
+
+    .topBannerText h5 {
+        font-size: 1rem; /* 15px / 16px */
+    }
+
+    .bottonBannerContainer {
+        justify-content: space-between;
+    }
+
+    .cardsInscricao {
+        width: 35%;
+    }
+
+    .cardsInscricao div p {
+        font-size: 0.5rem; /* 10px / 16px */
+    }
+
+    .cardsInscricao div i {
+        font-size: 1rem; /* 15px / 16px */
+    }
+
+    .btnInscricao {
+        width: 40%;
+        font-size: 1rem; /* 15px / 16px */
+        margin-left: 0;
+    }
+}

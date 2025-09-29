@@ -1,0 +1,76 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 90rem; /* 1440px / 16px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* 24px / 16px */
+    box-sizing: border-box;
+}
+
+.suplicySize {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 15px / 16px */
+}
+
+.imgSuplicy {
+    height: 5rem; /* 80px / 16px */
+    width: 5rem; /* 80px / 16px */
+    background-image: url('./../../assets/img/logoSuplicy.png');
+    background-size: 180%;
+    background-position: center;
+}
+
+.estadoSize {
+    height: 5rem; /* 80px / 16px */
+    width: 12rem; /* 200px / 16px */
+    background-image: url('./../../assets/img/logoEstado.png');
+    background-size: 110%;
+    background-position: center;
+}
+
+.textSuplicy h2,
+.textSuplicy h6 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.textSuplicy h2 {
+    font-size: 1.5625rem; /* 25px / 16px */
+    font-weight: 700;
+}
+
+.textSuplicy h6 {
+    font-size: 0.9375rem; /* 15px / 16px */
+    font-weight: 500;
+}
+
+@media (max-width: 30em) { /* 480px / 16px */
+    .headerContainer {
+        flex-direction: column;
+    }
+
+    .imgSuplicy {
+        height: 3.125rem; /* 50px / 16px */
+        width: 3.125rem; /* 50px / 16px */
+    }
+
+    .estadoSize {
+        display: none;
+    }
+
+    .textSuplicy h2 {
+        font-size: 0.9375rem; /* 15px / 16px */
+    }
+
+    .textSuplicy h6 {
+        font-size: 0.625rem; /* 10px / 16px */
+    }
+}
