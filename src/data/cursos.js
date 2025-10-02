@@ -7,6 +7,7 @@ import ImgEletro from './../assets/img/eletro.jpeg';
 import ImgMarketing from './../assets/img/marketing.jpeg';
 
 
+//Banco
 export const cursosDatas = [
     {
         titulo: 'ELETROMECÂNICA',
