@@ -1,6 +1,10 @@
 import './cursoModelo.css';
+import ImgurGallery from '../../galeria/Galery';
 
 function CursoModelo({ curso, id }) {
+    const abrirGaleria = (link) => {
+        window.open(link, '_blank');
+    };
     return <div className='secaoCurso' id={id}>
         <div className='infosCurso'>
             <div className='textsCurso'>
@@ -37,11 +41,15 @@ function CursoModelo({ curso, id }) {
                     ))}
                 </ul>
             </div>
-            <div className='card cardExtra'>
-                <div className='iconCamera'>
+            <div className='cardExtra'>
+                <div className='iconCamera' onClick={()=>{abrirGaleria(curso.linkGaleria)}}>
                     <i class="fa-solid fa-camera"></i>
                 </div>
-                <div className='galery'></div>
+                <div className='galery'>
+                    <ImgurGallery albumId={curso.galeria} />
+                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8">
+                    </script>
+                </div>
                 <div className='icons-extra'>
                     {curso.titulo === 'DESENVOLVIMENTO DE SISTEMAS'
                         ?

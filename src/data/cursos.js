@@ -7,7 +7,7 @@ export const cursosDatas = [
         titulo: 'ELETROMECÂNICA',
         descricao: 'Curso técnico que forma profissionais para atuar na manutenção e operação de equipamentos eletromecânicos.',
         conteudos: [
-            'Eletrica Industrial',
+            'Elétrica Industrial',
             'Mecânica Aplicada',
             'Automação Industrial',
             'Comandos Elétricos',
@@ -21,8 +21,8 @@ export const cursosDatas = [
             'Empresas de Energia',
             'Consultoria Técnica',
         ],
-        galeria: [
-        ],
+        galeria: 'QuW7mYj',
+        linkGaleria: 'https://imgur.com/gallery/eletromec-nica-QuW7mYj',
         icone: IconEletro,
     },
     {
@@ -43,9 +43,8 @@ export const cursosDatas = [
             'Suporte Técnico',
             'Desenvolvedor BackEnd',
         ],
-        galeria: [
-
-        ],
+        galeria: '5RbnIjv',
+        linkGaleria: 'https://imgur.com/gallery/sistemas-5RbnIjv',
         icone: IconDev,
     },
     {
@@ -66,9 +65,8 @@ export const cursosDatas = [
             'Comunicação Empresarial',
             'Consultoria em Marketing',
         ],
-        galeria: [
-
-        ],
+        galeria: 'pQLmrrf',
+        linkGaleria: 'https://imgur.com/gallery/marketing-pQLmrrf',
         icone: IconMark,
     }
 ]
