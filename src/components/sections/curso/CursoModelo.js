@@ -1,5 +1,5 @@
 import './cursoModelo.css';
-import ImgurGallery from '../../galeria/Galery';
+// import ImgurGallery from '../../galeria/Galery';
 
 function CursoModelo({ curso, id }) {
     const abrirGaleria = (link) => {
@@ -41,14 +41,18 @@ function CursoModelo({ curso, id }) {
                     ))}
                 </ul>
             </div>
-            <div className='cardExtra'>
-                <div className='iconCamera' onClick={()=>{abrirGaleria(curso.linkGaleria)}}>
+            <div className='card cardExtra' onClick={() => { abrirGaleria(curso.linkGaleria) }}>
+                <div className='iconCamera'>
                     <i class="fa-solid fa-camera"></i>
                 </div>
-                <div className='galery'>
-                    <ImgurGallery albumId={curso.galeria} />
-                    <script async src="//s.imgur.com/min/embed.js" charset="utf-8">
-                    </script>
+                <div
+                    className='galery'
+                    style={
+                        {
+                            backgroundImage: `url(${curso.galeria})`
+                        }
+                    }>
+                    {/* <img src={curso.galeria} alt='Img Curso'></img> */}
                 </div>
                 <div className='icons-extra'>
                     {curso.titulo === 'DESENVOLVIMENTO DE SISTEMAS'

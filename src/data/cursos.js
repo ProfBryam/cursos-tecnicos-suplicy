@@ -2,6 +2,11 @@ import IconEletro from './../assets/img/iconEletro.png';
 import IconDev from './../assets/img/iconDev.png';
 import IconMark from './../assets/img/iconMark.png';
 
+import ImgSistemas from './../assets/img/sistemas.jpeg';
+import ImgEletro from './../assets/img/eletro.jpeg';
+import ImgMarketing from './../assets/img/marketing.jpeg';
+
+
 export const cursosDatas = [
     {
         titulo: 'ELETROMECÂNICA',
@@ -21,7 +26,7 @@ export const cursosDatas = [
             'Empresas de Energia',
             'Consultoria Técnica',
         ],
-        galeria: 'QuW7mYj',
+        galeria: ImgEletro,
         linkGaleria: 'https://imgur.com/gallery/eletromec-nica-QuW7mYj',
         icone: IconEletro,
     },
@@ -43,7 +48,7 @@ export const cursosDatas = [
             'Suporte Técnico',
             'Desenvolvedor BackEnd',
         ],
-        galeria: '5RbnIjv',
+        galeria: ImgSistemas,
         linkGaleria: 'https://imgur.com/gallery/sistemas-5RbnIjv',
         icone: IconDev,
     },
@@ -65,7 +70,7 @@ export const cursosDatas = [
             'Comunicação Empresarial',
             'Consultoria em Marketing',
         ],
-        galeria: 'pQLmrrf',
+        galeria: ImgMarketing,
         linkGaleria: 'https://imgur.com/gallery/marketing-pQLmrrf',
         icone: IconMark,
     }
